@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">COVID19 India</string>
+    <string name="spinnerprompt">Choose your region</string>
+</resources>
