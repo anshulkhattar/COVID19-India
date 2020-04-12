@@ -7,6 +7,7 @@ class IndividualDetailsPOJO {
     var detectedCity:String=""
     var detectedState:String=""
     var status:String=""
+    var coordinates:String=""
 
     constructor()
 
@@ -16,7 +17,8 @@ class IndividualDetailsPOJO {
         gender:String,
         detectedCity:String,
         detectedState:String,
-        status:String
+        status:String,
+        coordinates:String
 
     ) : super() {
         this.govtId=govtId
@@ -25,5 +27,6 @@ class IndividualDetailsPOJO {
         this.detectedCity=detectedCity
         this.detectedState=detectedState
         this.status=status
+        this.coordinates=coordinates
     }
 }

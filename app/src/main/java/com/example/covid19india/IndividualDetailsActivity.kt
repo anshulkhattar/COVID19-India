@@ -37,6 +37,7 @@ class IndividualDetailsActivity : AppCompatActivity() {
         var detectedCity: String = ""
         var detectedState: String = ""
         var status: String = ""
+        var coordinates:String =""
         val inputStream: InputStream = resources.openRawResource(R.raw.individualdetails)
         val reader = BufferedReader(InputStreamReader(inputStream))
 
@@ -49,8 +50,9 @@ class IndividualDetailsActivity : AppCompatActivity() {
                 detectedCity=tokens[8]
                 detectedState=tokens[9]
                 status=tokens[11]
+                coordinates=tokens[6]
 
-                val individualData=IndividualDetailsPOJO(govtId,dateDiagnosed, gender, detectedCity, detectedState, status)
+                val individualData=IndividualDetailsPOJO(govtId,dateDiagnosed, gender, detectedCity, detectedState, status , coordinates)
                 individualsData.add(individualData)
             }
             Log.d("token", individualsData.toString())

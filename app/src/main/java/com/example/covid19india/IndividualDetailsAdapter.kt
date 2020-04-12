@@ -21,6 +21,7 @@ class IndividualDetailsAdapter(private val mDataList: ArrayList<IndividualDetail
         holder.loc.text = mDataList[position+1].detectedCity.replace("\"","")+"\n" + mDataList[position].detectedState.replace("\"","")
         holder.status.text = mDataList[position+1].status.replace("\"","")
         var gender = mDataList[position+1].gender.replace("\"","")
+        var coordinates= mDataList[position+1].coordinates.replace("\"","")
         if(gender.equals("Female")) holder.image.setImageResource(R.drawable.female)
     }
 

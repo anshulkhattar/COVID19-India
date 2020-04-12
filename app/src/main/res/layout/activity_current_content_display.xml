@@ -70,23 +70,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/date"
-                android:layout_width="194dp"
+                android:id="@+id/confirmed"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Last Updated"
+                android:text="Confirmed"
                 android:textColor="#000"
                 android:textSize="15dp" />
 
             <TextView
-                android:id="@+id/datedata"
+                android:id="@+id/confirmeddata"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -101,42 +103,17 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/confI"
+                android:id="@+id/recovered"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Confirmed Indian Nationals"
+                android:text="Recovered"
                 android:textColor="#000"
                 android:textSize="15dp" />
 
             <TextView
-                android:id="@+id/confIdata"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="#000"
-                android:textSize="15dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/congF"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Confirmed Foriegn Nationals "
-                android:textColor="#000"
-                android:textSize="15dp" />
-
-            <TextView
-                android:id="@+id/confFdata"
+                android:id="@+id/recovereddata"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -151,17 +128,17 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/cured"
+                android:id="@+id/active"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Cured"
+                android:text="Active"
                 android:textColor="#000"
                 android:textSize="15dp" />
 
             <TextView
-                android:id="@+id/cureddata"
+                android:id="@+id/activedata"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

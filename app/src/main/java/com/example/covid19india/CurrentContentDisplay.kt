@@ -19,11 +19,10 @@ class CurrentContentDisplay : AppCompatActivity() {
         quote.text=quotes.random()
         var stateSelected=intent.getStringExtra("state")
         state.text=intent.getStringExtra("state")
-        cureddata.text=intent.getStringExtra("cured")
-        deathsdata.text=intent.getStringExtra("deaths")
-        confIdata.text=intent.getStringExtra("indian")
-        confFdata.text=intent.getStringExtra("foreign")
-        datedata.text=intent.getStringExtra("date")
+        confirmeddata.text=intent.getStringExtra("conf")
+        deathsdata.text=intent.getStringExtra("death")
+        recovereddata.text=intent.getStringExtra("rev")
+        activedata.text=intent.getStringExtra("act")
 
         individual.setOnClickListener {
             var intent= Intent(this,IndividualDetailsActivity::class.java)
